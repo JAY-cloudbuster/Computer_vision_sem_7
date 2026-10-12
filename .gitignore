@@ -1,8 +1,15 @@
-# Python cache
+# Python bytecode & cache
 __pycache__/
 *.py[cod]
 *$py.class
 *.log
+*.tmp
+*.bak
+
+# Testing & IDE artifacts
+.pytest_cache/
+.vscode/
+.idea/
 
 # Environments
 .venv/
@@ -18,3 +25,4 @@ data/crop_dataset_224.npz
 # Operating System files
 .DS_Store
 Thumbs.db
+desktop.ini

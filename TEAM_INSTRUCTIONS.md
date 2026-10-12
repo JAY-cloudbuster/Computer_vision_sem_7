@@ -134,3 +134,10 @@ When all teammates have pushed their results:
 python -c "from run_full_pipeline import generate_visual_figures; generate_visual_figures()"
 ```
 This updates the overall comparison chart `results/figures/cnn_parameters_vs_fps.png` with everyone's finalized numbers.
+
+---
+
+## 🎯 Next Step: Part 2 - End-to-End ALPR Reader Pipeline
+Once your CNN model is trained and verified, proceed to **Part 2 (Detection to Reader OCR)**!
+See [TEAM_READER_INSTRUCTIONS.md](file:///d:/academics/cV_project/TEAM_READER_INSTRUCTIONS.md) for full instructions and commands.
+

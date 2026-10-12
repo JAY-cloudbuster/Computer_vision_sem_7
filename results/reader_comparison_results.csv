@@ -1,0 +1,2 @@
+Architecture,Total Evaluated,Verified by Gate,Gate Pass Rate (%),Exact Match (%),Avg NED (Similarity),Character Acc (%),CNN Latency (ms),OCR Latency (ms),End-to-End Latency (ms),End-to-End FPS
+ResNet50,25,24,96.0,28.0,0.7271,72.32,111.11,165.95,277.95,3.6
