@@ -25,4 +25,4 @@ data/crop_dataset_224.npz
 # Operating System files
 .DS_Store
 Thumbs.db
-desktop.ini
+desktop.inimodels/alexnet_plate_classifier.pth
