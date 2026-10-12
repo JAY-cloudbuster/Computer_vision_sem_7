@@ -1,0 +1,26 @@
+Feature Subset,Num Features,Algorithm,Accuracy,Precision,Recall,F1-Score,Train Time (ms),Latency/Sample (ms)
+Shape Only (4),4,Logistic Regression,0.7923,0.7098,0.6059,0.6537,16.49,0.0191
+Shape Only (4),4,K-Nearest Neighbors,0.9091,0.8843,0.8272,0.8548,14.42,0.1923
+Shape Only (4),4,SVM (RBF Kernel),0.9065,0.9016,0.7983,0.8468,16542.04,0.2373
+Shape Only (4),4,Random Forest,0.9239,0.9144,0.8438,0.8777,2475.8,0.624
+Shape Only (4),4,XGBoost,0.9235,0.9061,0.8517,0.8781,353.19,0.4601
+Texture Only (3),3,Logistic Regression,0.8801,0.8369,0.7817,0.8084,25.95,0.0391
+Texture Only (3),3,K-Nearest Neighbors,0.8764,0.819,0.7935,0.806,13.65,0.1368
+Texture Only (3),3,SVM (RBF Kernel),0.8848,0.8325,0.8062,0.8191,20027.73,0.2399
+Texture Only (3),3,Random Forest,0.8826,0.8323,0.798,0.8148,1904.06,0.6995
+Texture Only (3),3,XGBoost,0.8825,0.8349,0.794,0.8139,320.46,0.1952
+Color Only (3),3,Logistic Regression,0.7585,0.6579,0.5286,0.5862,13.2,0.086
+Color Only (3),3,K-Nearest Neighbors,0.772,0.6653,0.5944,0.6279,15.42,0.1639
+Color Only (3),3,SVM (RBF Kernel),0.7805,0.6728,0.6265,0.6488,32652.48,1.5063
+Color Only (3),3,Random Forest,0.7783,0.684,0.5853,0.6308,5152.53,2.1091
+Color Only (3),3,XGBoost,0.7846,0.6893,0.6088,0.6466,589.95,0.3065
+Shape + Texture (7),7,Logistic Regression,0.9184,0.8954,0.8469,0.8705,39.89,0.0434
+Shape + Texture (7),7,K-Nearest Neighbors,0.9463,0.9477,0.883,0.9142,45.1,0.4222
+Shape + Texture (7),7,SVM (RBF Kernel),0.9497,0.9617,0.8796,0.9188,27338.39,0.2049
+Shape + Texture (7),7,Random Forest,0.958,0.9679,0.9,0.9327,3027.6,2.4141
+Shape + Texture (7),7,XGBoost,0.9576,0.9606,0.9062,0.9326,616.26,0.3622
+All 10 Features,10,Logistic Regression,0.9196,0.8974,0.8486,0.8723,53.71,0.0617
+All 10 Features,10,K-Nearest Neighbors,0.9496,0.9496,0.8916,0.9197,76.01,0.645
+All 10 Features,10,SVM (RBF Kernel),0.9528,0.962,0.8893,0.9242,39108.18,0.4931
+All 10 Features,10,Random Forest,0.9609,0.9696,0.9077,0.9376,12064.95,3.0544
+All 10 Features,10,XGBoost,0.9639,0.9671,0.9197,0.9428,575.18,0.3711

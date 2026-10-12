@@ -1,0 +1,4 @@
+Policy,Inference Duty Cycle (%),Total Frames,Inference Calls,Total Time (s),Effective FPS,Latency/Frame (ms),Mean IoU,Detection Rate
+Every 1st Frame (k=1),100.0,25,25,3.347,7.5,133.9,0.7566,0.8077
+Every 2nd Frame (k=2),50.0,25,13,1.656,15.1,66.26,0.7953,0.4231
+Every 3rd Frame (k=3),33.3,25,9,1.156,21.6,46.24,0.7533,0.3077

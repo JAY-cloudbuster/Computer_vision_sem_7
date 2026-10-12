@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+
+# Environments
+.venv/
+venv/
+env/
+
+# Large datasets & caches (> 100 MB GitHub limit)
+data/images/
+data/crop_dataset_224.npz
+!data/annotations_test.json
+!data/annotations_train.json
+
+# Operating System files
+.DS_Store
+Thumbs.db
