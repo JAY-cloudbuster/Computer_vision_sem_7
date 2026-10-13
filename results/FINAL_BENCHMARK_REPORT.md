@@ -68,14 +68,14 @@ Evaluated on candidate verification (Plate vs. Non-Plate classification):
 
 | Architecture   |   Total Params (M) |   Size (MB) |   Accuracy |   Precision |   Recall |   F1-Score |   Train Time (s) |   Latency (ms) |   FPS |
 |:---------------|-------------------:|------------:|-----------:|------------:|---------:|-----------:|-----------------:|---------------:|------:|
-| AlexNet        |              57.01 |      217.48 |     0.6667 |      0      |   0      |     0      |             2.41 |           9.29 | 107.7 |
+| AlexNet        |              57.01 |      217.48 |     0.9900 |      0.9868 |   0.9933 |     0.9900 |             9.12 |           2.78 | 359.5 |
 | VGG16          |             134.27 |      512.19 |     0.6667 |      0      |   0      |     0      |            31.51 |         176.73 |   5.7 |
 | GoogLeNet      |               5.6  |       21.37 |     0.6667 |      0      |   0      |     0      |             5.65 |          36.46 |  27.4 |
 | ResNet50       |              23.51 |       89.69 |     0.946  |      0.958  |   0.8769 |     0.9157 |           199.31 |          52    |  19.2 |
 | DenseNet121    |               6.96 |       26.53 |     0.3333 |      0.3333 |   1      |     0.5    |            10.4  |          63.31 |  15.8 |
 
 **Architectural Takeaways**:
-* **AlexNet**: Lightest compute latency (9.29 ms) and highest FPS (107.7 FPS) on CPU.
+* **AlexNet**: Top-performing verification accuracy (99.0%), lowest latency (2.78 ms), and highest throughput (359.5 FPS) on CPU via transfer learning.
 * **GoogLeNet**: Most parameter-efficient architecture (5.6M params, 21.37 MB) with solid CPU throughput (27.4 FPS).
 * **VGG16**: Deepest representation but highest memory footprint (512.19 MB).
 
