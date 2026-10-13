@@ -2,7 +2,7 @@
 ## Final Experimental Benchmark Report
 
 **Environment**: Python 3.12, PyTorch 2.6, OpenCV 4.9, Scikit-Learn 1.9, XGBoost 3.4
-**Date Generated**: 2026-10-12 17:30:53
+**Date Updated**: 2026-10-13
 
 ---
 
@@ -69,7 +69,7 @@ Evaluated on candidate verification (Plate vs. Non-Plate classification):
 | Architecture   |   Total Params (M) |   Size (MB) |   Accuracy |   Precision |   Recall |   F1-Score |   Train Time (s) |   Latency (ms) |   FPS |
 |:---------------|-------------------:|------------:|-----------:|------------:|---------:|-----------:|-----------------:|---------------:|------:|
 | AlexNet        |              57.01 |      217.48 |     0.9900 |      0.9868 |   0.9933 |     0.9900 |             9.12 |           2.78 | 359.5 |
-| VGG16          |             134.27 |      512.19 |     0.6667 |      0      |   0      |     0      |            31.51 |         176.73 |   5.7 |
+| VGG16          |             134.27 |      512.19 |     0.9873 |      0.9636 |   1.0    |     0.9815 |           550.73 |          67.43 |  14.8 |
 | GoogLeNet      |               5.6  |       21.37 |     0.6667 |      0      |   0      |     0      |             5.65 |          36.46 |  27.4 |
 | ResNet50       |              23.51 |       89.69 |     0.946  |      0.958  |   0.8769 |     0.9157 |           199.31 |          52    |  19.2 |
 | DenseNet121    |               6.96 |       26.53 |     0.3333 |      0.3333 |   1      |     0.5    |            10.4  |          63.31 |  15.8 |
@@ -77,7 +77,13 @@ Evaluated on candidate verification (Plate vs. Non-Plate classification):
 **Architectural Takeaways**:
 * **AlexNet**: Top-performing verification accuracy (99.0%), lowest latency (2.78 ms), and highest throughput (359.5 FPS) on CPU via transfer learning.
 * **GoogLeNet**: Most parameter-efficient architecture (5.6M params, 21.37 MB) with solid CPU throughput (27.4 FPS).
-* **VGG16**: Deepest representation but highest memory footprint (512.19 MB).
+* **VGG16**: Achieved 98.73% accuracy and 0.9815 F1 on its independent 158-crop test. It has the largest model footprint (512.19 MB) and its measured CPU crop-classification latency was 67.43 ms (14.8 crops/s).
+
+**VGG16 evaluation context**: The VGG16 classifier test used 158 crops (105 non-plates and 53 plates), with confusion matrix `[[103, 2], [0, 53]]` (rows are true labels; columns are predicted labels). These are candidate-crop classification results, not full-scene plate-detection accuracy. The other architecture rows were measured under their existing team workflows and may use different sample sizes, splits, hardware, or timing procedures; treat the table as a summary of reported results rather than a strictly controlled head-to-head ranking. VGG16 training time includes data preparation, full-network feature extraction, and final-layer fitting; training-time comparisons also reflect different workflows.
+
+In the separate 50-scene detection benchmark, classical proposals plus VGG16 achieved precision 0.8214, recall 0.4340, F1 0.5679, and 5.4 FPS. The classical detector alone achieved precision 0.1729, recall 0.4340, F1 0.2473, and 471.1 FPS. VGG16 reduced false proposals from 110 to 5, but recall did not increase because the verifier cannot recover plates the proposal detector misses.
+
+On the 40-image reader benchmark, VGG16's gate passed 37 crops (92.5%); OCR exact full-plate match was 35.0%, character accuracy was 67.53%, and end-to-end throughput was 8.05 samples/s. On the full 1,696-image reader dataset, exact match was 27.48% and character accuracy was 65.32%. This reader evaluation used annotated plate crops, so it measures OCR and the VGG16 gate separately from full-scene localization. Character accuracy can be higher than exact match because one incorrect character makes the entire plate string an exact-match failure.
 
 ---
 
