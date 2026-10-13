@@ -1,1 +1,2 @@
 models/alexnet_plate_classifier.pth filter=lfs diff=lfs merge=lfs -text
+models/vgg16_plate_classifier.pth filter=lfs diff=lfs merge=lfs -text

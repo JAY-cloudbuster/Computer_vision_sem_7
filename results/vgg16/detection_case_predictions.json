@@ -1,0 +1,284 @@
+[
+  {
+    "case": 1,
+    "filename": "img_136.jpg",
+    "candidates": [
+      {
+        "box": [
+          153,
+          245,
+          21,
+          8
+        ],
+        "plate_probability": 1.654779993032207e-07,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 70.72833299753256
+      },
+      {
+        "box": [
+          237,
+          237,
+          107,
+          27
+        ],
+        "plate_probability": 0.9999995231628418,
+        "iou": 0.6849217638691323,
+        "outcome": "TP",
+        "latency_ms": 67.3922499991022
+      }
+    ]
+  },
+  {
+    "case": 2,
+    "filename": "img_701.jpg",
+    "candidates": [
+      {
+        "box": [
+          340,
+          251,
+          32,
+          10
+        ],
+        "plate_probability": 0.0001249705528607592,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 65.24604200239992
+      },
+      {
+        "box": [
+          259,
+          225,
+          80,
+          18
+        ],
+        "plate_probability": 0.9999986886978149,
+        "iou": 0.7046580773042617,
+        "outcome": "TP",
+        "latency_ms": 66.93787499534665
+      },
+      {
+        "box": [
+          448,
+          257,
+          15,
+          8
+        ],
+        "plate_probability": 3.036148825685814e-07,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 67.1703330008313
+      }
+    ]
+  },
+  {
+    "case": 3,
+    "filename": "img_39.jpg",
+    "candidates": [
+      {
+        "box": [
+          241,
+          114,
+          25,
+          7
+        ],
+        "plate_probability": 1.1223843102925457e-05,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 65.01929099613335
+      },
+      {
+        "box": [
+          130,
+          125,
+          20,
+          8
+        ],
+        "plate_probability": 2.0138122636126354e-05,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 66.89137499779463
+      },
+      {
+        "box": [
+          192,
+          180,
+          123,
+          28
+        ],
+        "plate_probability": 1.0,
+        "iou": 0.9172473867595818,
+        "outcome": "TP",
+        "latency_ms": 66.80616599624045
+      },
+      {
+        "box": [
+          405,
+          66,
+          64,
+          32
+        ],
+        "plate_probability": 1.2858805673002673e-19,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 68.35387500177603
+      },
+      {
+        "box": [
+          379,
+          0,
+          133,
+          28
+        ],
+        "plate_probability": 1.2554107186525296e-15,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 66.87550000060583
+      }
+    ]
+  },
+  {
+    "case": 4,
+    "filename": "img_678.jpg",
+    "candidates": [
+      {
+        "box": [
+          332,
+          304,
+          32,
+          10
+        ],
+        "plate_probability": 0.9995844960212708,
+        "iou": 0.6494845360824743,
+        "outcome": "TP",
+        "latency_ms": 65.5574579941458
+      },
+      {
+        "box": [
+          552,
+          312,
+          30,
+          11
+        ],
+        "plate_probability": 0.004346400033682585,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 66.94108300143853
+      },
+      {
+        "box": [
+          132,
+          34,
+          47,
+          19
+        ],
+        "plate_probability": 1.6373957123505534e-07,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 69.26604199543362
+      },
+      {
+        "box": [
+          382,
+          0,
+          23,
+          10
+        ],
+        "plate_probability": 2.301900167367421e-06,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 69.45891700161155
+      },
+      {
+        "box": [
+          417,
+          323,
+          23,
+          11
+        ],
+        "plate_probability": 2.4579446744610323e-06,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 68.05179200455314
+      },
+      {
+        "box": [
+          331,
+          266,
+          37,
+          8
+        ],
+        "plate_probability": 0.0008565219468437135,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 66.93212500249501
+      }
+    ]
+  },
+  {
+    "case": 5,
+    "filename": "img_324.jpg",
+    "candidates": [
+      {
+        "box": [
+          425,
+          288,
+          47,
+          12
+        ],
+        "plate_probability": 3.016154437318619e-08,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 66.39337499655085
+      },
+      {
+        "box": [
+          249,
+          160,
+          87,
+          22
+        ],
+        "plate_probability": 1.0,
+        "iou": 0.9770114942528736,
+        "outcome": "TP",
+        "latency_ms": 66.98616699577542
+      },
+      {
+        "box": [
+          161,
+          21,
+          33,
+          17
+        ],
+        "plate_probability": 1.0916592145804316e-05,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 67.03154100250686
+      },
+      {
+        "box": [
+          275,
+          141,
+          33,
+          18
+        ],
+        "plate_probability": 7.873958646556489e-14,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 66.66512499941746
+      },
+      {
+        "box": [
+          289,
+          288,
+          62,
+          12
+        ],
+        "plate_probability": 1.949468497741691e-07,
+        "iou": 0.0,
+        "outcome": "TN",
+        "latency_ms": 67.68187499983469
+      }
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "original_files_changed": [
+    "results/cnn_comparison_results.csv",
+    "results/reader_comparison_results.csv"
+  ],
+  "teammate_rows_preserved": true,
+  "reader_records_verified": 1696,
+  "classification_records_verified": 158,
+  "figure_dimensions": {
+    "results/vgg16/vgg16_sample_case_4.jpg": [
+      2520,
+      1120
+    ],
+    "results/vgg16/vgg16_sample_case_5.jpg": [
+      2520,
+      1120
+    ],
+    "results/vgg16/vgg16_sample_case_2.jpg": [
+      2520,
+      1120
+    ],
+    "results/vgg16/vgg16_sample_case_3.jpg": [
+      2520,
+      1120
+    ],
+    "results/vgg16/vgg16_sample_case_1.jpg": [
+      2520,
+      1120
+    ],
+    "results/vgg16_reader/case_3_kerala_compact.jpg": [
+      2520,
+      840
+    ],
+    "results/vgg16_reader/case_1_karnataka_frontal.jpg": [
+      2520,
+      840
+    ],
+    "results/vgg16_reader/case_5_uttarpradesh_highres.jpg": [
+      2520,
+      840
+    ],
+    "results/vgg16_reader/case_2_maharashtra_sedan.jpg": [
+      2520,
+      840
+    ],
+    "results/vgg16_reader/case_4_maharashtra_urban.jpg": [
+      2520,
+      840
+    ],
+    "results/vgg16/vgg16_all_5_cases_overview.jpg": [
+      1600,
+      3555
+    ],
+    "results/vgg16_reader/vgg16_all_5_reader_cases_overview.jpg": [
+      1600,
+      2665
+    ],
+    "results/vgg16/training_and_test_results.png": [
+      2160,
+      810
+    ],
+    "results/vgg16/reader_results.png": [
+      1620,
+      900
+    ]
+  }
+}

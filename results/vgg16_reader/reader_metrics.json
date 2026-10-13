@@ -1,0 +1,29 @@
+{
+  "first_40": {
+    "Architecture": "VGG16",
+    "Total Evaluated": 40,
+    "Verified by Gate": 37,
+    "Gate Pass Rate (%)": 92.5,
+    "Exact Match (%)": 35.0,
+    "Avg NED (Similarity)": 0.6858,
+    "Character Acc (%)": 67.53,
+    "CNN Latency (ms)": 68.08,
+    "OCR Latency (ms)": 60.72,
+    "End-to-End Latency (ms)": 124.24,
+    "End-to-End FPS": 8.05
+  },
+  "full_dataset": {
+    "Architecture": "VGG16",
+    "Total Evaluated": 1696,
+    "Verified by Gate": 1561,
+    "Gate Pass Rate (%)": 92.04,
+    "Exact Match (%)": 27.48,
+    "Avg NED (Similarity)": 0.6604,
+    "Character Acc (%)": 65.32,
+    "CNN Latency (ms)": 68.75,
+    "OCR Latency (ms)": 66.12,
+    "End-to-End Latency (ms)": 129.61,
+    "End-to-End FPS": 7.72
+  },
+  "protocol": "Ground-truth crops, CPU VGG16 threshold .5, shared EasyOCR preprocessing; ground truth preserved; all samples in metric denominators."
+}

@@ -27,3 +27,5 @@ data/crop_dataset_224.npz
 Thumbs.db
 desktop.ini
 models/alexnet_plate_classifier.pth
+
+/models/vgg16_plate_classifier.pth
